@@ -378,4 +378,7 @@
     <!-- Whether device supports increased touch sensitvity -->
     <bool name="config_supportGloveMode">true</bool>
 
+    <!-- Ignore CNE from privacy (location) indicators -->
+    <string name="config_systemAudioIntelligence" translatable="false">com.quicinc.cne.CNEService</string>
+
 </resources>
