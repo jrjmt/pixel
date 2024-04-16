@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58a294b1_ba07d378",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2024-04-16T20:48:08Z",
+      "side": 1,
+      "message": "The 4 currently open commits bring back the VoLTE, cellular data and VoWiFi on crosshatch.\nThe preference for using VoLTE or VoWiFi cannot be set in settings/ network and internet/ calls and sms/ wifi calling: It mentions the preference for using wifi or cellular network, but no way to select the preference.\nThe rest is doing well.\n\nSMS also working.\n\nIn case of air plane mode with WiFi enabled, I cannot receive calls (over VoWiFi), and cannot place a call. Phone app says \"connect to network\".\n\nTested with \"HIGH\", an MVNO in the German \"Telekom Deutschland\" network.",
+      "revId": "15282f40426a12377b5d3f61c25eb2118956b8ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
