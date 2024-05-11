@@ -63,8 +63,8 @@ PRODUCT_PACKAGES += chre_test_client
 endif
 
 LOCAL_PATH := device/google/crosshatch
-SRC_MEDIA_HAL_DIR := hardware/qcom/media/sdm845
-SRC_DISPLAY_HAL_DIR := hardware/qcom/display/sdm845
+SRC_MEDIA_HAL_DIR := hardware/qcom/sdm845/media
+SRC_DISPLAY_HAL_DIR := hardware/qcom/sdm845/display
 
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
@@ -880,3 +880,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Set system properties identifying the chipset
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SDM845
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs
