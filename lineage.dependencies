@@ -1,14 +1,22 @@
 [
   {
-    "repository": "android_device_google_gs-common",
+    "repository": "device_google_gs-common",
     "target_path": "device/google/gs-common"
   },
   {
-    "repository": "android_kernel_google_msm-4.9",
+    "repository": "kernel_google_msm-4.9",
     "target_path": "kernel/google/msm-4.9"
   },
   {
-    "repository": "android_packages_apps_ElmyraService",
+    "repository": "packages_apps_ElmyraService",
     "target_path": "packages/apps/ElmyraService"
+  },
+  {
+    "repository"  : "vendor_google_crosshatch",
+    "target_path" : "vendor/google/crosshatch"
+  },
+  {
+    "repository"  : "vendor_google_blueline",
+    "target_path" : "vendor/google/blueline"
   }
 ]

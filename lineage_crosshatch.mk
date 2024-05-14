@@ -4,7 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Lineage stuff.
+# Inherit some common Evolution stuff.
+EVO_BUILD_TYPE := COMMUNITY
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_MINI_GAPPS := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
@@ -13,13 +18,11 @@ $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
 include device/google/crosshatch/crosshatch/device-lineage.mk
 
 # Device identifier. This must come after all inclusions
-PRODUCT_BRAND := google
+PRODUCT_MANUFACTURER := Google
+PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3 XL
 PRODUCT_NAME := lineage_crosshatch
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2960
-TARGET_SCREEN_WIDTH := 1440
+PRODUCT_DEVICE := crosshatch
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=crosshatch \
